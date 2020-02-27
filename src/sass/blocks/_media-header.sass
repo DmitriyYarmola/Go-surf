@@ -1,0 +1,176 @@
+@media (max-width: 1440px)
+    .logo
+        img
+            width: $px-100
+
+    .header__title
+        font-size: $px-130
+        line-height: 108px
+        top: $px-20
+        left: $px-60
+
+    .header__search
+        padding-bottom: $px-8
+
+    .header__date
+        font-size: $px-60
+        span
+            font-size: $px-14
+            padding-top: 0
+            margin-bottom: $px-5
+
+    .header__arrows
+        left: $px-130
+
+@media (max-width: 1366px)
+    .header__aside
+        position: absolute
+        height: 108px
+        padding-right: 25px
+        background-color: rgba($white, .1)
+        display: flex
+        border: none
+        text-align: left
+
+    .menu
+        padding-top: 0
+    .menu__list
+        text-align: center
+        li
+            display: inline-block
+        
+        a
+            padding: $px-15
+
+    .header__search
+        padding: $px-35 $px-15 $px-15
+
+    .header__date
+        padding: $px-15
+
+    .header__location
+        margin-top: $px-42
+
+    .slider-item__info-title
+        font-size: $px-65
+
+    .header__arrows
+        left: $px-20
+        bottom: $px-20
+
+@media (max-width: 1340px)
+    .header__map
+        svg
+            width: 500px
+            height: 250px
+
+        .slider__arrows
+
+            top: 20px
+            right: 20px
+
+        .slider-arrows__left
+            right: 58px
+
+@media (max-width: 1040px)
+    .header__arrows
+        display: none
+
+    .menu-btn
+        display: flex
+    .menu
+        background-color: $black
+        z-index: 22
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-top: $px-16
+        transform: translatex(-100%) 
+        transition: all .3s linear
+
+        &.active
+            transform: translatex(0) 
+
+    .header__search
+        padding: $px-40 $px-15 $px-15
+
+    .slider-item__info
+        position: absolute
+        right: $px-20
+        bottom: $px-17
+        text-align: right
+
+    .slider-item__info-text
+        font-size: $px-30
+        line-height: $px-20
+        margin-bottom: $px-15
+
+    .headline-left
+        font-size: $px-16
+        line-height: $px-18
+        padding-left: $px-65
+        &::before
+            width: 50px
+            
+
+    .slider-item__info-suptext
+        margin-bottom: $px-5
+
+    .slider-item__info-title
+        font-size: $px-80
+        line-height: $px-65
+        margin-bottom: $px-20
+
+    .slider-dotshead
+        right: 0
+        left: 10px
+        bottom: $px-5
+        margin: 0 auto
+
+    .dots-box
+        width: $px-125
+
+    .dots-box__number
+        font-size: $px-18
+
+    .dots-box__name
+        line-height: $px-18
+
+
+@media (max-width: 960px)
+    .slider-dots
+        display: none
+
+// @media (max-width: 767px)
+
+@media (max-width: 460px)
+    .header__aside
+        display: block
+        text-align: center 
+        padding-right: 0
+        height: 100%
+
+    .header__search
+        padding: 15px 0 5px
+
+    .header__date
+        font-size: $px-50
+        padding: 0
+        line-height: $px-45
+        span
+            font-size: $px-12
+
+    .header__location
+        margin-top: 0
+
+    .header__title
+        display: none
+
+
+
+

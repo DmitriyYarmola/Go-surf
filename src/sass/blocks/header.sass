@@ -1,0 +1,212 @@
+.header
+    position: relative
+    height: 100%
+
+
+.header__slider
+    &-item
+        height: 940px
+        background: url('../img/header/surf-the-wave.jpg') no-repeat center
+        background-size: cover
+        position: relative
+
+
+.slider-item__info
+    position: absolute
+    right: 80px
+    bottom: 116px
+    text-align: right
+    color: $white
+
+.slider-item__info-title
+
+    font-weight: 800
+    font-size: $px-80
+    line-height: $px-86
+
+    letter-spacing: 7.33333px
+
+    color: #FFFFFF
+    margin-bottom: $px-48
+
+.slider-item__info-suptitile 
+    margin-bottom: $px-5
+
+.slider-item__info-suptext
+    margin-bottom: $px-8
+
+.slider-item__info-text
+
+    font-weight: $fw-800
+    font-size: $px-40
+    line-height: $px-45
+    margin-bottom: $px-20
+
+.slider-item__info-link
+    display: flex
+    justify-content: flex-end
+
+
+.slider-arrows
+    position: absolute
+    top: 40px   
+    right: 80px
+    cursor: pointer
+    z-index: 4
+
+.slider-arrows-left
+    right: 125px
+
+.slider-dots
+    position: absolute
+    z-index: 4
+    right: 50px
+    bottom: 36px
+    max-width: 920px
+    width: 100%
+    color: $white
+
+    .slick-current
+        .dots-box
+            border-top-color: $green-border
+
+    
+.dots-box
+    width: 200px
+    display: flex
+    justify-content: space-between
+    height: $px-28
+    align-items: center
+    border-top: 4px solid $white
+    padding-top: $px-6
+
+    &__number
+        font-size: $px-24
+        font-weight: $fw-800
+        
+
+    &__name
+        line-height: 19px
+        font-weight: $fw-300
+        text-transform: capitalize
+
+.header__aside 
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 5
+    border-right: 1px solid rgba($white, .25)
+    height: 100%
+    text-align: center
+    color: $white
+
+.header__title
+    font-weight: $fw-800
+    font-size: $px-200
+    line-height: 156px
+    opacity: .07
+    max-width: 467px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 4
+        
+
+.menu 
+    padding-top: $px-40
+    a
+        color: $white
+        span
+            display: block
+            font-size: $px-12
+            line-height: $px-14
+            letter-spacing: $px-3
+            font-weight: $fw-500
+            padding-top: $px-6
+            margin-bottom: $px-22
+            text-transform: capitalize
+
+
+.menu-btn
+    width: $px-60
+    height: $px-60
+    display: none
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    border: 1px solid $white
+    position: absolute
+    right: $px-20
+    z-index: 20
+    top: 100px
+    background-color: rgba(255,255,255,.1)
+
+    &__inner
+        width: 40px  
+        
+
+    &__line
+        height: $px-5
+        background-color: $green-border
+
+        + .menu-btn__line
+            margin-top: $px-5
+
+
+.header__date
+    font-size: $px-72
+    line-height: $px-64
+    font-weight: $fw-800
+    span
+        padding-top: $px-15
+        font-weight: $fw-300
+        font-size: $px-16
+        line-height: $px-19
+        letter-spacing: 1.4px
+        margin-bottom: $px-30
+        display: block
+        text-transform: capitalize
+
+.header__location
+    display: inline-block
+    font-weight: $fw-300
+    line-height: $px-14
+    letter-spacing: 1.05px
+    position: relative
+    padding-left: $px-19
+    text-transform: capitalize
+    &::before
+        content: ""
+        width: $px-11
+        height: $px-13
+        position: absolute
+        background-image: url("../img/header/poi.svg")
+        left: 0
+        top: 0
+
+.header__search
+    padding-top: $px-15
+    padding-bottom: $px-35
+
+
+.header__map
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 3
+
+
+.header__arrows
+    position: absolute
+    bottom: $px-30
+    left: $px-210
+    z-index: 3
+
+.line-animation
+    stroke-dashoffset: 600
+    stroke-dasharray: 600
+    animation: anim-dash 5s infinite 6s 
+
+@keyframes anim-dash
+    100%
+        stroke-dashoffset: 0

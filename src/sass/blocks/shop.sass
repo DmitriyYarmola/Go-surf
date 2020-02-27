@@ -1,0 +1,166 @@
+.shop
+    background-image: url(../img/shop/shop-bg.svg) 
+    background-repeat: no-repeat
+    background-position: right center
+
+    .slider-arrows
+        opacity: .5
+
+    
+    
+.shop__slider-price
+    position: relative
+
+.star-list__shop
+    position: static
+    display: block
+    padding-left: 0
+    margin-left: -15px
+
+    li
+        margin-right: -$px-25
+
+.shop__slider
+    padding-left: $px-132
+
+.shop__slider-inner
+    display: flex
+
+.shop__slider-info
+    max-width: 480px
+    width: 100%
+    margin-right: $px-40
+    padding-top: 166px
+
+.descr__head-shop
+    max-width: 340px
+    margin-bottom: $px-47
+
+
+.shop__slider-price
+    font-weight: $fw-800
+    font-size: $px-32
+    line-height: $px-25
+    margin-bottom: $px-64
+    sup
+        font-size: $px-18
+
+
+.shop__slider-content
+    display: flex
+    padding-left: 170px
+    align-items: flex-end
+.shop__extras
+    padding-left: 150px
+
+.shop__extras-inner
+    display: flex
+
+
+.shop__extras-title
+    font-weight: $fw-800
+    font-size: $px-28
+    margin-bottom: $px-25
+    line-height: $px-40
+
+
+.shop__extras-box
+    text-align: center
+    margin-right: $px-57
+
+.shop__extras-images
+    min-height: 105px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: $px-35
+
+.shop__extras-name
+    font-size: $px-18
+    line-height: $px-22
+    opacity: .5
+    letter-spacing: $px-8
+    margin-bottom: $px-16
+
+.shop__extras-price
+    font-weight: $fw-800
+    font-size: $px-18
+    line-height: $px-40
+
+.surfboard
+    position: relative
+
+.surfboard-box
+    position: absolute
+
+.surfboard-box 
+    top: 215px
+    right: 40px
+
+.surfboard-box:nth-child(2)
+    top: 296px
+    left: 0
+
+.surfboard-box:nth-child(3)
+    top: 596px
+    left: 40px
+
+.surfboard-box__circle
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    position: relative
+    background-color: $white
+    cursor: pointer
+
+    &.active
+        .circle-row
+            transform: translate(-50%,-50%)  rotate(0)
+
+        
+
+.circle-row
+    background-color: $green-border
+    position: absolute
+    width: 12px
+    height: 2px
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+    & + .circle-row
+        transform: translate(-50%, -50%)  rotate(90deg)
+
+.surfboard-box__content, .surfboard-box__content-3
+    display: none
+    position: absolute
+    top: -15px
+    left: 40px 
+    width: 359px
+    font-weight: $fw-800
+    font-size: $px-24
+    line-height: $px-24
+    padding-left: 104px
+    &::before
+        content: ""
+        position: absolute
+        background-color: $white
+        width: 80px
+        height: 1px
+        top: 50%
+        left: 0
+
+.surfboard-box__circle.active + .surfboard-box__content
+    display: block
+
+.surfboard-box__circle.active + .surfboard-box__content-3
+    display: block
+
+
+
+
+        
+
+
+
+

@@ -1,0 +1,245 @@
+.surf
+    padding: $px-160 0 $px-120
+    background-image: url('../img/surf/surf-bg.jpg')
+    background-position: right 200px
+    background-repeat: no-repeat
+    background-size: auto
+
+.surf__subtitle
+    text-align: right
+    padding-right: $px-80
+    margin-top: -$px-80
+
+.surf-box
+    
+    &__wrapper
+        background-image: url(build/img/surf/surf-slider-1.png)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+
+
+    &__inner
+        min-height: 750px
+        background: rgba($slider-bg, .85)
+        position: relative
+        top: 0
+        bottom: 0
+        transition: background .4s linear
+
+        &:hover
+            background: rgba($slider-bg, .3)
+
+.surf-slider
+    padding-top: $px-110
+
+    .slick-arrow
+        top: $px-50
+        opacity: .25
+
+
+
+    .slick-slide:nth-child(4n+1)
+        .surf-box
+            margin-top: $px-32
+
+    .slick-slide:nth-child(4n+3)
+        .surf-box
+            margin-top: $px-89
+
+    .slick-current
+        .surf-box__inner-btn
+            display: block
+
+        .surf-box__inner
+            background: rgba($slider-bg, .3)
+
+
+
+
+
+.surf-box__inner-title
+    font-weight: $fw-800
+    font-size: $px-40
+    line-height: $px-36
+    padding: $px-72 0 0 $px-40
+    width: $px-140
+
+.surf-box__inner-location
+    font-size: $px-18
+    line-height: $px-22
+    letter-spacing: $px-8
+    transform: rotate(-90deg)
+    position: absolute
+    left: $px-40
+    bottom: $px-80
+    white-space: nowrap
+    width: 0
+    height: 0
+    span
+        font-weight: $fw-100
+
+.surf-box__inner-btn
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    display: none
+
+
+
+.slider-map
+    max-width: 1200px
+    min-height: 635px
+    background-image: url(../img/surf/world-map.svg) 
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    margin: 0 auto
+
+    .slick-list
+        min-height: 625px
+
+    .slick-current
+        .slider-touch__content
+            display: block
+            width: 285px
+            padding: $px-28 $px-31 0 $px-32
+
+.slider-touch__content-row
+    display: flex
+    justify-content: space-between
+    padding-bottom: $px-30
+
+
+.slider-touch__content-item
+    text-align: center
+
+    
+    
+    img
+        margin-bottom: $px-7
+
+.slick-slide
+    img
+        display: initial
+
+.slider-touch__content-number
+    font-weight: $fw-800
+    font-size: $px-16
+    line-height: $px-23
+
+.slider-touch__content-name
+    font-weight: $fw-300
+    font-size: $px-10
+    line-height: $px-12
+
+
+.slider-touch__content-title
+    font-weight: $fw-800
+    font-style: $px-18
+    line-height: $px-26
+    padding-bottom: $px-8
+    margin-bottom: $px-8
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        background-color: $green-border
+        width: 80px
+        height: 1px
+        bottom: 0
+        left: 0
+        
+        
+
+.slider-touch__content-subtitle
+    text-transform: capitalize
+    line-height: $px-19
+    font-size: $px-16
+
+.slider-touch__circle
+    width: 24px
+    height: 23px
+    background-color: $green-border
+    border-radius: 50%
+    box-shadow: 0px 0px 30px -3px rgba(74, 246, 205, 1)
+
+.slider-touch__content
+    display: none
+    background: rgba(#000, .4)
+    border-radius: $px-20
+    position: absolute
+    z-index: 5
+    bottom: $px-35
+    // left: 50%
+    left: -128px
+
+    &::before
+        content: ""
+        position: absolute
+        width: 0
+        height: 0
+        border-bottom: 20px solid $green-border
+        border-left: 12px solid transparent
+        border-right: 12px solid transparent
+        bottom: -21px
+        left: 45%
+        border-bottom-left-radius: $px-10
+        border-bottom-right-radius: $px-10
+
+.slick-list
+    overflow: visible
+
+.slider-touch
+    position: absolute
+
+.slider-touch--1
+    top: 335px
+    left: 2%
+
+.slider-touch--2
+    top: 300px
+    .slider-touch__circle
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            background-image: url(../img/surf/poi.png)
+            background-size: cover
+            right: -15px
+            top: -25px
+            width: 14px
+            height: 17px
+
+
+.slider-touch--3
+    top: 315px
+    left: 28%
+
+.slider-touch--4
+    top: 500px
+    left: 35%
+
+.slider-touch--5
+    top: 230px
+    left: 45%
+
+.slider-touch--6
+    top: 550px
+    left: 53%
+
+.slider-touch--7
+    top: 390px
+    left: 67%
+
+.slider-touch--8
+    top: 500px
+    left: 90%
+
+
+.slider-touch__content-link
+    padding-top: $px-4
+
+
